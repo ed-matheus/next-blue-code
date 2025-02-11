@@ -1,0 +1,46 @@
+$primary-color: #1E90FF
+$secondary-color: #1C3D5A
+$cinza-escuro: #4A4A4A
+$cinza-claro: #F4F6F9
+$verde-neon: #00D97E
+$branco-puro: #fff
+
+.active // classe que será aplicada a links ativos
+    // background-color: #121212
+    border-bottom: 2px solid $primary-color
+    color: $primary-color
+
+.header-container
+    display: flex
+    align-items: center
+    justify-content: space-around
+    padding: 25px
+    background-color: $branco-puro
+
+    .project-title 
+        color: $secondary-color
+        font-size: 1.6em
+        font-weight: bold
+    
+    .navigation
+        display: flex
+
+    .navigation li 
+        // color: $secondary-color
+        font-size: 1em
+        font-weight: 500
+        padding: 5px 15px 5px
+
+        &:hover
+            color: $primary-color
+
+    .btn 
+        background-color: $verde-neon
+        padding: 10px 15px
+        border: 2px solid $verde-neon
+        border-radius: 8px
+        color: $branco-puro
+        font-weight: 500
+
+        &:hover
+            background-color: $verde-neon
