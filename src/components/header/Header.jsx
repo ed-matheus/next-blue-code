@@ -16,21 +16,29 @@ const Header = () => {
             </Link>
 
             <ul className="navigation">
-                <Link className={`link ${pathname === "/" ? "active" : ""}`} href={'/'}>
-                    <li>Home</li>
-                </Link>
+                <li>
+                    <Link className={`link ${pathname === "/" ? "active" : ""}`} href={'/'}>
+                        Home
+                    </Link>
+                </li>
 
-                <Link className={`link ${pathname === "/sobre" ? "active" : ""}`} href={'/sobre'}>
-                    <li>Sobre</li>
-                </Link>
+                <li>
+                    <Link className={`link ${pathname === "/sobre" ? "active" : ""}`} href={'/sobre'}>
+                        Sobre
+                    </Link>
+                </li>
 
-                <Link className={`link ${pathname === "/servicos" ? "active" : ""}`} href={'/servicos'}>
-                    <li>Serviços</li>
-                </Link>
+                <li>
+                    <Link className={`link ${pathname === "/servicos" ? "active" : ""}`} href={'/servicos'}>
+                        Serviços
+                    </Link>
+                </li>
 
-                <Link className={`link ${pathname === "/contato" ? "active" : ""}`} href={'/contato'}>
-                    <li>Contato</li>
-                </Link>
+                <li>
+                    <Link className={`link ${pathname === "/contato" ? "active" : ""}`} href={'/contato'}>
+                        Contato
+                    </Link>
+                </li>
             </ul>
 
             <button className="btn">Fale Conosco</button>

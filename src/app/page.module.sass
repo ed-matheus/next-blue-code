@@ -1,0 +1,54 @@
+$primary-color: #1E90FF
+$secondary-color: #1C3D5A
+$cinza-escuro: #4A4A4A
+$cinza-claro: #F4F6F9
+$verde-neon: #00D97E
+$branco-puro: #fff
+
+// Banner / Hero Section
+.banner_container 
+    background-color: rgba(0, 0, 0, 0.4)
+    position: relative 
+    padding: 50px
+    color: $branco-puro
+    height: 350px
+
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+    h2 
+        margin-bottom: 5px
+
+    .btn 
+        width: 15%
+        background-color: $secondary-color
+        color: $branco-puro
+        font-weight: 500
+        border-radius: 5px
+        padding: 10px 15px 10px 15px
+        margin-top: 20px
+
+        &:hover
+            background-color: $primary-color
+
+    &::before 
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-image: url('../../public/background.jpg')
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+        z-index: -1
+
+// Cards de Destaques/Benefícios
+.benefits_section
+    width: 100%
+    padding: 25px
+
+    display: flex
+    justify-content: space-around
