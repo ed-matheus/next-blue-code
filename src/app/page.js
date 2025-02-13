@@ -7,6 +7,7 @@ import Card from '@/components/card/Card';
 // ícones
 import { faMicrochip } from '@fortawesome/free-solid-svg-icons';
 import { faLightbulb } from '@fortawesome/free-solid-svg-icons';
+import { faHeadset } from '@fortawesome/free-solid-svg-icons';
 
 export default function Home() {
   return (
@@ -35,7 +36,7 @@ export default function Home() {
         />
 
         <Card
-          icon={faLightbulb}
+          icon={faHeadset}
           title='Suporte 24/7'
           description='Estamos disponíveis a qualquer momento para oferecer assistência técnica e garantir que sua operação nunca pare.'
         />

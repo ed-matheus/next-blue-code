@@ -1,16 +1,37 @@
+$primary-color: #1E90FF
+$secondary-color: #1C3D5A
+$cinza-escuro: #4A4A4A
+$cinza-claro: #F4F6F9
+$verde-neon: #00D97E
+$branco-puro: #fff
+    
 .card
     width: 25%
+    height: 250px
     border-radius: 8px 
+    border-bottom: 4px solid $primary-color
     box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.1)
-    padding: 22px
-    text-align: center
+    padding: 25px
+    
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
 
 .card_icon
-    width: 100%
+    width: 50px
+    height: 50px
     margin: 0 auto
     margin-bottom: 15px
+    color: $primary-color
 
 .card_title
-    font-weight: 500
+    font-weight: 700
     font-size: 1em
+    color: $secondary-color
     margin-bottom: 12px
+
+.card_description
+    text-align: center
+    color: $secondary-color
+    font-weight: 500
