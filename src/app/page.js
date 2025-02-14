@@ -12,15 +12,17 @@ import { faHeadset } from '@fortawesome/free-solid-svg-icons';
 export default function Home() {
   return (
     <div className='w-full'>
+      {/* Banner do site */}
       <div className={styles.banner_container}>
         <h1 className='mb-2 font-bold'>Transformamos Tecnologia em Soluções Reais.</h1>
-        <h2 className='font-medium text-xl'>A BlueCode oferece ferramentas inovadoras para impulsionar sua empresa no mundo digital.</h2>
+        <h2 className='font-medium'>A BlueCode oferece ferramentas inovadoras para impulsionar sua empresa no mundo digital.</h2>
 
         <button className={styles.btn}>
           <Link href={'#'}>Saiba mais</Link>
         </button>
       </div>
 
+      {/* Seção dos Cards */}
       <div className={styles.benefits_section}>
         <Card
           icon={faMicrochip}

@@ -10,39 +10,41 @@ const Header = () => {
     const pathname = usePathname();
 
     return (
-        <nav className="header-container">
+        <header>
             <Link href={'/'}>
                 <h2 className="project-title">BlueCode</h2>
             </Link>
 
-            <ul className="navigation">
-                <li>
-                    <Link className={`link ${pathname === "/" ? "active" : ""}`} href={'/'}>
-                        Home
-                    </Link>
-                </li>
+            <nav>
+                <ul className="navigation">
+                    <li>
+                        <Link className={`link ${pathname === "/" ? "active" : ""}`} href={'/'}>
+                            Home
+                        </Link>
+                    </li>
 
-                <li>
-                    <Link className={`link ${pathname === "/sobre" ? "active" : ""}`} href={'/sobre'}>
-                        Sobre
-                    </Link>
-                </li>
+                    <li>
+                        <Link className={`link ${pathname === "/sobre" ? "active" : ""}`} href={'/sobre'}>
+                            Sobre
+                        </Link>
+                    </li>
 
-                <li>
-                    <Link className={`link ${pathname === "/servicos" ? "active" : ""}`} href={'/servicos'}>
-                        Serviços
-                    </Link>
-                </li>
+                    <li>
+                        <Link className={`link ${pathname === "/servicos" ? "active" : ""}`} href={'/servicos'}>
+                            Serviços
+                        </Link>
+                    </li>
 
-                <li>
-                    <Link className={`link ${pathname === "/contato" ? "active" : ""}`} href={'/contato'}>
-                        Contato
-                    </Link>
-                </li>
-            </ul>
+                    <li>
+                        <Link className={`link ${pathname === "/contato" ? "active" : ""}`} href={'/contato'}>
+                            Contato
+                        </Link>
+                    </li>
+                </ul>
+            </nav>
 
             <button className="btn">Fale Conosco</button>
-        </nav>
+        </header>
     )
 }
 
