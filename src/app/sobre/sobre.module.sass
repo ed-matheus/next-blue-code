@@ -1,0 +1,91 @@
+$primary-color: #1E90FF
+$secondary-color: #1C3D5A
+$cinza-escuro: #4A4A4A
+$cinza-claro: #F4F6F9
+$verde-neon: #00D97E
+$branco-puro: #fff
+
+// Banner de Introdução da página
+.about_intro
+    width: 100%
+    height: 200px
+    padding: 60px 100px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    color: $cinza-escuro
+
+// Sobre a Empresa
+.about_us
+    background: rgb(28,61,90);
+    background: -moz-linear-gradient(45deg, rgba(28,61,90,1) 0%, rgba(30,144,255,1) 70%, rgba(244,246,249,1) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(28,61,90,1) 0%, rgba(30,144,255,1) 70%, rgba(244,246,249,1) 100%);
+    background: linear-gradient(45deg, rgba(28,61,90,1) 0%, rgba(30,144,255,1) 70%, rgba(244,246,249,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1c3d5a",endColorstr="#f4f6f9",GradientType=1);    
+
+    display: flex
+    justify-content: space-around
+    align-items: center
+    height: 400px
+    padding: 60px 150px
+    color: $branco-puro
+
+    .about_content
+        // border: 1px solid red
+        width: 50%
+
+        p 
+            font-size: 1em
+            line-height: 1.5em
+
+    .image
+        width: 25%
+        margin-left: 1.5em
+
+// Missão, Visão e Valores
+.company_mission
+    background-color: rgba(0, 0, 0, 0.7)
+    position: relative
+    padding: 60px 150px
+    height: 450px
+
+    &::before 
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+
+        background-image: url('../../../public/dev-laptop.jpg')
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover 
+        background-attachment: fixed
+        z-index: -1
+
+    .missions
+        width: 80%
+        color: $branco-puro
+        margin: 0 auto
+
+        .topics
+            display: flex
+            justify-content: start
+            width: 100%
+
+            div
+                width: 40%
+
+            .topic
+                display: flex
+                flex-direction: column
+                justify-content: center
+
+            .topic_image
+                border-radius: 100%
+                overflow: hidden
+                width: 120px
+                height: 120px
+                margin-bottom: 15px
