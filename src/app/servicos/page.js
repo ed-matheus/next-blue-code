@@ -1,4 +1,4 @@
-
+import styles from './servicos.module.sass'
 
 const Servicos = () => {
     return (

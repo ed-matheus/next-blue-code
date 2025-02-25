@@ -32,7 +32,7 @@ const Sobre = () => {
                                 icon={faLaptop}
                                 />
                         </h1>
-                        <p className='w-full'>
+                        <p className='w-full font-medium'>
                             A BlueCode é uma startup inovadora que transforma tecnologia em soluções reais.
                             Nosso propósito é oferecer ferramentas e serviços tecnológicos de ponta para
                             impulsionar empresas no mundo digital. <br/><br/>
@@ -53,23 +53,23 @@ const Sobre = () => {
 
                             <div className='flex flex-col items-center me-3'>
                                 <Image className={styles.topic_image} src={techSolution} alt='solução tech' />
-                                <h2 className='text-center'>
+                                <h2 className='text-center font-medium'>
                                     Fornecer soluções tecnológicas inovadoras e acessíveis para
                                     impulsionar o crescimento das empresas.
                                 </h2>
                             </div>
     
                             <div className='flex flex-col items-center me-3'>
-                                <Image className={styles.topic_image} src={innovation} alt='' />
-                                <h2 className='text-center'>
+                                <Image className={styles.topic_image} src={innovation} alt='inovação' />
+                                <h2 className='text-center font-medium'>
                                     Ser referência em inovação e qualidade no setor tecnológico,
                                     ajudando negócios a prosperarem na era digital.
                                 </h2>
                             </div>
                                 
                             <div className='flex flex-col items-center'>
-                                <Image className={styles.topic_image} src={support} />
-                                <h2 className='text-center'>
+                                <Image className={styles.topic_image} src={support} alt='suporte' />
+                                <h2 className='text-center font-medium'>
                                     Inovação, compromisso, excelência e suporte contínuo para entregar
                                     tecnologia com qualidade e eficiência.
                                 </h2>
